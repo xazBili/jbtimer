@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+build/
+dist/
+_dist/
+exe/
+*.exe
+*.spec
+
+settings.json
+error.log
+
+.workbuddy/
+.idea/
+.vscode/

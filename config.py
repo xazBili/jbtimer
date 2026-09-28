@@ -1,0 +1,64 @@
+import os
+
+SCALE = 1.0
+STYLE = "dark"
+LAYOUT = "blocks"
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+ICON_FILE = os.path.join(BASE_DIR, "pmqdt-08edn-001.ico")
+APP_NAME = "金避计时器"
+
+MARGIN = 24
+CARD_SIZE = 132
+CARD_RADIUS = 22
+CARD_SPACING = 18
+
+BAR_WIDTH = 560
+BAR_HEIGHT = 96
+BAR_RADIUS = 0
+BAR_PADDING = 22
+BAR_FONT_SIZE = 44
+
+CARD_FILL_TOP = "#141416"
+CARD_FILL_BOTTOM = "#141416"
+CARD_BORDER_TOP = "#2E2E32"
+CARD_BORDER_BOTTOM = "#2E2E32"
+CARD_OUTLINE_WIDTH = 5
+CARD_SHADOW = "#70000000"
+CARD_SHADOW_OFFSET = 5
+GLASS_HIGHLIGHT = "#00FFFFFF"
+
+DIGIT_FILL = "#FFFFFF"
+DIGIT_OUTLINE = "#000000"
+DIGIT_OUTLINE_WIDTH = 9
+DIGIT_OUTLINE_WIDTH_SMALL = 6
+
+LABEL_COLOR = "#5A5A5E"
+LABEL_BOTTOM = 20
+
+UNITS = {"hour": "h", "min": "min", "sec": "s", "ms": "ms"}
+UNIT_GAP = 4
+
+FONT_CANDIDATES = ["Arial Rounded MT Bold", "Comic Sans MS", "Verdana"]
+FONT_FALLBACK = "Arial"
+LABEL_FONT_CANDIDATES = ["Microsoft YaHei UI", "Microsoft YaHei", "SimHei"]
+LABEL_FONT_FALLBACK = "Arial"
+FONT_SIZE = 56
+FONT_SIZE_SMALL = 42
+UNIT_FONT_SIZE = 24
+UNIT_FONT_SIZE_SMALL = 20
+LABEL_FONT_SIZE = 13
+
+TICK_MS = 100
+TICK_MS_FAST = 33
+
+DEFAULT_KEYS = {"start": "W", "pause": "E", "reset": "R"}
+DEFAULT_SHOW_MS = False
+DEFAULT_SCALE = 100
+DEFAULT_STYLE = "dark"
+DEFAULT_LAYOUT = "blocks"
+DEFAULT_IMAGE = ""
+
+
+def scaled(value):
+    return int(round(value * SCALE))
