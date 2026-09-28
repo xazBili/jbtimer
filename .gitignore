@@ -12,6 +12,5 @@ exe/
 settings.json
 error.log
 
-.workbuddy/
 .idea/
 .vscode/
