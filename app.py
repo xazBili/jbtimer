@@ -72,6 +72,7 @@ class MainWindow(QWidget):
         if self.data["layout"] == "bar":
             self.root.setContentsMargins(0, 0, 0, 0)
             self.bar = BarDisplay(self)
+            self.bar.set_image(self.data["image"])
             self.root.addWidget(self.bar)
             self.setFixedSize(
                 config.scaled(config.BAR_WIDTH), config.scaled(config.BAR_HEIGHT)

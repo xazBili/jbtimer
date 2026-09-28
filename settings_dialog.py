@@ -129,7 +129,7 @@ class SettingsDialog(QDialog):
         layout.addWidget(buttons)
 
     def sync_image_row(self):
-        self.image_widget.setEnabled(self.layout_combo.currentData() != "bar")
+        self.image_widget.setEnabled(self.layout_combo.currentData() == "bar")
 
     def pick_image(self):
         path, _ = QFileDialog.getOpenFileName(
