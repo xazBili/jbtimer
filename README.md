@@ -64,12 +64,4 @@ python -m PyInstaller --noconfirm --onefile --windowed --icon pmqdt-08edn-001.ic
 | `settings.py` / `settings_dialog.py` | 配置持久化与设置界面 |
 | `styles.py` / `config.py` / `font_util.py` | 外观样式、全局参数、字体选择 |
 
-## 官网
 
-静态站点位于仓库外的 `web/` 目录（`../web`，不在本 Git 仓库内），包含 `index.html`、`styles.css`、`app.js`、`netlify.toml`，可直接用 Netlify 部署：
-
-```bash
-netlify deploy --prod --dir=web
-```
-
-也可以把 `web` 文件夹直接拖到 Netlify 控制台完成部署。站点地址：https://jbtimer.netlify.app
